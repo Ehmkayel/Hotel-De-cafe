@@ -1,0 +1,73 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variables*/
+:root {
+    --white-color: #ffffff;
+    --deep-purple: #beadfa;
+    --light-purple: #d0bfff;
+    --very-light-purple: #dfccfb;
+    --light-yellow: #fff8c9;
+    --black: #000000;
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#contact-banner{
+    background-color: red;
+    height: 50vh;
+}
+.contact-banner{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.Cform-group{
+    padding: 10px ;
+    background-color: var(--light-yellow);
+    
+}
+.Cform-group label{
+display: block;
+font-size: 1.2em;
+color: var(--deep-purple);
+
+}
+.Cform-group input{
+width: 100%;
+padding: 6px;
+}
+textarea {
+    width: 100%;
+    padding: 0.8em;
+}
+::placeholder{
+    color: var(--light-purple);
+}
+.contact-location{
+    padding: 5px;
+}
+.list{
+    font-size: 1em;
+    color: var(--deep-purple);
+    margin-bottom: 5px;
+    
+}
+.Cform-group a{
+    color: var(--deep-purple);
+}

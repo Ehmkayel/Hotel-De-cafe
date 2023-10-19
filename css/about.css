@@ -1,0 +1,86 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variables*/
+:root {
+    --white-color: #ffffff;
+    --deep-purple: #beadfa;
+    --light-purple: #d0bfff;
+    --very-light-purple: #dfccfb;
+    --light-yellow: #fff8c9;
+    --black: #000000;
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* About */
+#about-banner{
+    background: url(../images/abt.jpg) no-repeat center center/cover;
+    height: 70vh;;
+}
+.about-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--deep-purple);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 10%;
+    
+    
+}
+.about-banner h1{
+    font-size: 2em;
+}
+.about-banner p{
+    font-size: 1.6em;
+    padding: 5px;
+}
+.about-banner .learn{
+    cursor: pointer;
+    margin-top: 2px;
+    background-color: var(--deep-purple);
+    color: var(--black);
+    padding: 5px;
+}
+/* about section with an image beside it */
+.about-container{
+    width: 80%;
+    margin: 30px auto
+
+}
+.about-heading{
+    text-align: center;
+    font-size: 1.7em;
+    color: var(--deep-purple);
+    margin-bottom: 10px;
+}
+.about-contents{
+    display: flex;
+    gap:70px;
+    
+}
+.about-items{
+display: flex;
+flex: 1;
+
+}
+.about-text h3{
+    font-size:1.6em;
+    text-align: center;
+    color: var(--deep-purple);
+    margin-bottom: 20px;
+}
+.about-text p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+.about-text .de{
+    color: var(--light-purple);
+    font-size: 1.3em;
+}

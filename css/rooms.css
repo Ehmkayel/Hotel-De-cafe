@@ -1,0 +1,53 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variables*/
+:root {
+    --white-color: #ffffff;
+    --deep-purple: #beadfa;
+    --light-purple: #d0bfff;
+    --very-light-purple: #dfccfb;
+    --light-yellow: #fff8c9;
+    --black: #000000;
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#room{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 20px auto;
+
+}
+.rooms-contents img{
+width: 100%;
+border-radius: 8px;
+}
+
+.rooms-text .btn{
+    display: inline-block;
+    background-color: var(--deep-purple);
+    color: var(--black);
+    padding: 7px 10px;
+    margin-top: 15px;
+
+}
+.heading{
+    color:var(--deep-purple);
+    text-align: center;
+    font-size: 1.5em;
+}
+.sub-headings{
+    color: var(--light-purple);
+    font-size: 1.3em;
+}
+.list-items li::before{
+    content: "."
+
+}

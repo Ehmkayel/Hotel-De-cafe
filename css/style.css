@@ -1,0 +1,258 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variables*/
+:root {
+    --white-color: #ffffff;
+    --deep-purple: #beadfa;
+    --light-purple: #d0bfff;
+    --very-light-purple: #dfccfb;
+    --light-yellow: #fff8c9;
+    --black: #000000;
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white-color);
+    font-family:'roboto' sans-serif;
+    
+}
+main{
+    background-color: var(--white-color);
+  
+}
+
+.headings{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    color: var(--very-light-purple);
+    font-size: 1.8em;
+    
+}
+a {
+    text-decoration: none;
+}
+/*The Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7em 5em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: var(--light-purple);
+    background-color: var(--light-yellow);
+}
+.logo{
+    color: var(--deep-purple);
+    font-size: 1.7em;
+}
+nav ul, li{
+    display: flex;
+    gap: 20px;
+}
+.active{
+    background-color: var(--deep-purple);
+    padding: 5px;
+}
+/* banner section */
+#banner{
+    background:  url(../images/lk.jpg) no-repeat center center/cover;
+    height: 70vh;
+    color: var(--light-yellow);
+}
+#banner .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+.banner h1{
+    font-size: 1.6em;
+    color: var(--deep-purple);
+}
+.banner p{
+    font-size: 1.3em;
+    padding: 5px;
+    color: var(--deep-purple);
+}
+.banner .service{
+    cursor: pointer;
+    margin-top: 2px;
+    background-color: var(--deep-purple);
+    color: var(--black);
+    padding: 5px;
+    border: none;
+}
+/* Form Section 8*/
+.form-content{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--light-yellow);
+    padding: 2%;
+ 
+}
+.form-group {
+display: flex;
+gap: 20px;
+
+}
+.form-group label{
+    color: var(--deep-purple);
+}
+.form-group input{
+    color: var(--black);
+    padding: 5px;
+    background-color: var(--deep-purple);
+}
+.btn{
+    margin-top: 3%;
+    padding: 5px;
+    background-color: var(--deep-purple);
+    color: var(--black);
+    cursor: pointer;
+   
+}
+/* Rooms Section */
+.containers{
+    width: 80%;
+    margin: auto;
+}
+#rooms .contents{
+    display: flex;
+    gap: 30px;
+  
+}
+#rooms .content{
+    display: flex;
+    flex-direction: column;
+    color: var(--deep-purple);
+    
+}
+#rooms .content img{
+    width: 100%;
+    object-fit: cover
+}
+.rom, .price, .icons{
+    margin-top: 10px ;
+    text-align: center;
+    font-size: 0.9em;
+}
+/* Service Section 8*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+#services .items{
+    display: flex;
+    text-align: center;
+    padding: 0.8em;
+    gap: 20px;
+    
+}
+.items .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   flex: 1;
+   padding: 0.8em;
+  
+}
+#services .items .item .fa-solid {
+    color: var(--deep-purple);
+    padding: 1.2em;
+    text-align: center;
+   
+}
+#services .btn{
+    background-color: var(--deep-purple);
+    color: var(--black);
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.text h4{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+.text .btn{
+    cursor: pointer;
+    
+}
+/* What Section 8*/
+.what-container{
+    width: 60%;
+    margin: auto;
+}
+
+.what-contents{
+    display: flex;
+    gap: 50px;
+    
+    
+}
+.what-items{
+    flex: 1;
+    border: 2px solid var(--light-purple);
+    background-color: var(--deep-purple);
+    box-shadow: 2px 2px 2px solid var(--deep-purple);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.what-text{
+    display: flex;
+    font-size: 1.2em;
+    padding: 0 0 5px;
+}
+#what img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#what .images{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    padding: 20px 
+
+}
+/*footer*/
+
+footer{
+    padding: 1.7em 5em;
+    background: var(--light-yellow);
+    color: var(--light-purple);
+    margin-top: 30px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+}
+.footer-item{
+    padding-bottom: 20px;
+   
+}
+.footer-item li{
+    padding-bottom: 5px;
+}
+.copy{
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--deep-purple)
+}
+
+
