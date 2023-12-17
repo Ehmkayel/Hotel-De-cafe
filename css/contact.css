@@ -3,12 +3,13 @@
 
 /* variables*/
 :root {
-    --white-color: #ffffff;
-    --deep-purple: #beadfa;
-    --light-purple: #d0bfff;
-    --very-light-purple: #dfccfb;
-    --light-yellow: #fff8c9;
-    --black: #000000;
+    --body-bg: #f0f0f0;
+    --button: #4e62f8;
+    --light-purple: #363062;
+    --heading-font: #333333;
+    --primary: #a4aaed;
+    --neutral: #ffffff;
+    --button-hover: #4d3dfd;
 }
 /* universal selector */
 *{
@@ -16,8 +17,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo span{
+    color: var(--button);
 
-
+}
 
 #contact-banner{
     background-color: red;
@@ -39,13 +42,13 @@
 
 .Cform-group{
     padding: 10px ;
-    background-color: var(--light-yellow);
+    background-color: var(--primary);
     
 }
 .Cform-group label{
 display: block;
 font-size: 1.2em;
-color: var(--deep-purple);
+color: var(--neutral);
 
 }
 .Cform-group input{
@@ -57,17 +60,26 @@ textarea {
     padding: 0.8em;
 }
 ::placeholder{
-    color: var(--light-purple);
+    color: var(--button);
 }
 .contact-location{
     padding: 5px;
 }
 .list{
     font-size: 1em;
-    color: var(--deep-purple);
+    color: var(--button);
     margin-bottom: 5px;
     
 }
 .Cform-group a{
     color: var(--deep-purple);
+}
+
+/* responsiveness */
+@media screen and (max-width: 1024px){
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }

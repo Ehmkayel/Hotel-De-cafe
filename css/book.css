@@ -3,12 +3,12 @@
 
 /* variables*/
 :root {
-    --white-color: #ffffff;
-    --deep-purple: #beadfa;
-    --light-purple: #d0bfff;
-    --very-light-purple: #dfccfb;
-    --light-yellow: #fff8c9;
-    --black: #000000;
+    --body-bg: #f0f0f0;
+    --button: #4e62f8;
+    --heading-font: #333333;
+    --primary: #a4aaed;
+    --neutral: #ffffff;
+    --button-hover: #4d3dfd;
 }
 /* universal selector */
 *{
@@ -55,7 +55,7 @@
     width: 90%;
     padding: 4px;
     border: 1px solid black;
-    color: var(--deep-purple);
+    color: var(--primary);
     outline: no;
     background: transparent;
     font-size: 1.2em;
@@ -63,7 +63,7 @@
 .Bform-group label{
 width: 100%;
 font-size: 1.2em;
-color: var(--deep-purple);
+color: var(--neutral);
 
 }
 
@@ -72,12 +72,13 @@ color: var(--deep-purple);
     padding: 0.8em;
 }
 ::placeholder{
-    color: aquamarine;
+    color: var(--button);
 }
 .Bbtn{
-background-color: var(--deep-purple);
+background-color: var(--button);
 padding: 5px;
 border-radius: 10px;
+color: var(--neutral);
 cursor: pointer;
 }
 footer{

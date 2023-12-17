@@ -3,7 +3,7 @@
 
 /* variables*/
 :root {
-    --white-color: #ffffff;
+    --body-bg: #f0f0f0;
     --deep-purple: #beadfa;
     --light-purple: #d0bfff;
     --very-light-purple: #dfccfb;
@@ -17,9 +17,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--white-color);
+    background-color: var(--body-bg);
     font-family:'roboto' sans-serif;
     
+}
+.logo span{
+    color: var(--button);
+
 }
 .restaurant-container{
     display: grid;
