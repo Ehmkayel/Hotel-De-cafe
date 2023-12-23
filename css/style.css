@@ -74,6 +74,20 @@ nav ul li a:hover{
     background-color: var(--button);
     padding: 5px;
 }
+
+.hamburger {
+    display: none;
+}
+
+.line{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
 /* banner section */
 #banner{
     background:  url(../images/lk.jpg) no-repeat center center/cover;
@@ -311,6 +325,108 @@ footer{
  
 
     
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        height: 100vh;
+        background-color: var(--button);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 8px 17px rgba(0, 0, 0, 0.05);
+    }
+    nav ul, li{
+        flex-direction: column;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    .links {
+        margin: 2.5rem 0;
+    }
+    .links .active{
+        background-color: var(--button-hover);
+        padding: 25px;
+        margin: auto;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .what-container{
+        margin: 0 30px;
+    }
+
+    footer{
+        padding: 0.8em 3em;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+ 
+}
+
+@media screen and (max-width: 480px){
+    header{
+        padding: 1.5em 2em
+    }
+
+    .logo{
+        font-size: 1.2em;
+    }
+    
+    .links {
+        margin: 1rem 0;
+    }
+    #rooms .contents{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+
+    #services .items{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: left;
+        
+    }
+    .what-contents{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+    }
+
+    footer{
+        padding: 0.2em;
+    }
+    .footer-item li a{
+        font-size: 0.9em;
+    
+    }
+
 }
 
 

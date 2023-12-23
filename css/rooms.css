@@ -24,7 +24,7 @@
 
 #room{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: repeat(2, 1fr) ;
     gap: 60px;
     max-width: 1200px;
     margin: 20px auto;
@@ -55,4 +55,26 @@ border-radius: 8px;
 .list-items li::before{
     content: "."
 
+}
+@media screen and (max-width: 480px){
+    #room{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.6em;
+
+    
+    }
+    .heading{
+        font-size: 0.8em;
+    }
+
+    .sub-headings{
+        color: var(--heading-font);
+        font-size: 1.2em;
+    }
+    .list-items li::before{
+        content: "";
+        
+
+    }
 }

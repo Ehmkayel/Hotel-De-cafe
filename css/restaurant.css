@@ -52,3 +52,10 @@ body{
 .restaurant-container .tall{
     grid-row: span 2;
 }
+
+@media screen and (max-width: 480px){
+    .restaurant-container{
+        grid-template-columns: 1fr;
+        
+    }
+}

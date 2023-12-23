@@ -113,3 +113,30 @@ flex: 1;
     }
 
 }
+
+@media screen and (max-width: 480px) {
+    .about-banner p{
+        font-size: 1em;
+    }
+
+    .about-heading{
+        font-size: 1.4em;
+    }
+
+    .about-text h3{
+        font-size: 1em;
+    }
+
+    .about-text p{
+        font-size: 0.9em;
+        margin-bottom: 4px;
+    }
+
+    .about-images img{
+        width: 100%
+    }
+    .footer-item li a{
+        font-size: 0.9em;
+    
+    }
+}

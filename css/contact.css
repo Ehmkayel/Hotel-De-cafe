@@ -83,3 +83,23 @@ textarea {
     }
 
 }
+
+@media screen and (max-width: 480px){
+   .contact-items img{
+    width: 100%
+   } 
+
+   .Cform-group label{
+    font-size: 0.9em;
+   }
+
+.list{
+    font-size: 0.8em;
+}
+
+.footer-item li a{
+    font-size: 0.9em;
+
+}
+
+}
