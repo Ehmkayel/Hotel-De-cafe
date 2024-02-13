@@ -110,7 +110,7 @@ nav ul li a:hover{
 }
 .banner p{
     font-size: 1.3em;
-    padding: 5px;
+    padding: 0.31em;
     color: var(--neutral);
 }
 .banner .service{
@@ -118,7 +118,7 @@ nav ul li a:hover{
     margin-top: 2px;
     background-color: var(--button);
     color: var(--neutral);
-    padding: 8px;
+    padding: 0.50em;
     border: none;
 }
 /* Form Section 8*/
